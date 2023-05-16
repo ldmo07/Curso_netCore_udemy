@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Interface IProductosRepositorio</Title>
+			<Author>Jimmy Javier</Author>
+			<Description>Agrega una interface IProductosRepositorio</Description>
+			<Shortcut>waipro</Shortcut>
+		</Header>
+		<Snippet>						
+			<Code Language="CSharp">
+				<![CDATA[ 
+public interface IProductosRepositorio
+    {
+        Task<List<Producto>> ObtenerProductosAsync();        
+        Task<Producto> ObtenerProductoAsync(int id);
+        Task<Producto> Agregar(Producto producto);
+        Task<bool> Actualizar(Producto producto);
+        Task<bool> Eliminar(int id);
+    }
+]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
+

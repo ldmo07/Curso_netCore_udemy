@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Producto Dto</Title>
+			<Author>Jimmy Javier</Author>
+			<Description>Crea un Dto para la clase Producto</Description>
+			<Shortcut>wadtopro</Shortcut>
+		</Header>
+		<Snippet>						
+			<Code Language="CSharp">
+				<![CDATA[ 
+public class ProductoDto
+    {
+        public int Id { get; set; }
+        [Required(ErrorMessage ="El nombre del producto es requerido")]
+        [Display(Name ="Producto")]
+        public string Nombre { get; set; }        
+        public decimal Precio { get; set; }                
+    }
+]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
+

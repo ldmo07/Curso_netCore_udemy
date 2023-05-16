@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Usuario Dto</Title>
+			<Author>Jimmy Javier</Author>
+			<Description>Crea un Dto para la clase Usuario</Description>
+			<Shortcut>wadtousr</Shortcut>
+		</Header>
+		<Snippet>						
+			<Code Language="CSharp">
+				<![CDATA[ 
+public class UsuarioDto
+    {        
+        public int Id { get; set; }
+        [Required]
+        [Display(Name ="Nombre del Usuario")]
+        public string Nombre { get; set; }
+        [Display(Name = "Apellidos del Usuario")]
+        public string Apellidos { get; set; }
+        [Required]        
+        [Display(Name = "Correo Electrónico")]
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
+        [Required]
+        [Display(Name = "Cuenta")]
+        public string Username { get; set; }
+        [Required]
+        [Display(Name = "Password")]        
+        public string Password { get; set; }        
+        [Required]
+        [Display(Name = "Perfil del usuario")]
+        public int PerfilId { get; set; }
+        public string Perfil { get; set; }        
+    }
+]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
+

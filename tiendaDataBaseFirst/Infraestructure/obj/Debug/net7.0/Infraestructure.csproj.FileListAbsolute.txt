@@ -1,0 +1,15 @@
+C:\Proyectos\Dotnet\Curso-Udemy-Uniminuto\tiendaDataBaseFirst\Infraestructure\bin\Debug\net7.0\Infraestructure.deps.json
+C:\Proyectos\Dotnet\Curso-Udemy-Uniminuto\tiendaDataBaseFirst\Infraestructure\bin\Debug\net7.0\Infraestructure.dll
+C:\Proyectos\Dotnet\Curso-Udemy-Uniminuto\tiendaDataBaseFirst\Infraestructure\bin\Debug\net7.0\Infraestructure.pdb
+C:\Proyectos\Dotnet\Curso-Udemy-Uniminuto\tiendaDataBaseFirst\Infraestructure\bin\Debug\net7.0\Core.dll
+C:\Proyectos\Dotnet\Curso-Udemy-Uniminuto\tiendaDataBaseFirst\Infraestructure\bin\Debug\net7.0\Core.pdb
+C:\Proyectos\Dotnet\Curso-Udemy-Uniminuto\tiendaDataBaseFirst\Infraestructure\obj\Debug\net7.0\Infraestructure.csproj.AssemblyReference.cache
+C:\Proyectos\Dotnet\Curso-Udemy-Uniminuto\tiendaDataBaseFirst\Infraestructure\obj\Debug\net7.0\Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos\Dotnet\Curso-Udemy-Uniminuto\tiendaDataBaseFirst\Infraestructure\obj\Debug\net7.0\Infraestructure.AssemblyInfoInputs.cache
+C:\Proyectos\Dotnet\Curso-Udemy-Uniminuto\tiendaDataBaseFirst\Infraestructure\obj\Debug\net7.0\Infraestructure.AssemblyInfo.cs
+C:\Proyectos\Dotnet\Curso-Udemy-Uniminuto\tiendaDataBaseFirst\Infraestructure\obj\Debug\net7.0\Infraestructure.csproj.CoreCompileInputs.cache
+C:\Proyectos\Dotnet\Curso-Udemy-Uniminuto\tiendaDataBaseFirst\Infraestructure\obj\Debug\net7.0\Infraestructure.csproj.CopyComplete
+C:\Proyectos\Dotnet\Curso-Udemy-Uniminuto\tiendaDataBaseFirst\Infraestructure\obj\Debug\net7.0\Infraestructure.dll
+C:\Proyectos\Dotnet\Curso-Udemy-Uniminuto\tiendaDataBaseFirst\Infraestructure\obj\Debug\net7.0\refint\Infraestructure.dll
+C:\Proyectos\Dotnet\Curso-Udemy-Uniminuto\tiendaDataBaseFirst\Infraestructure\obj\Debug\net7.0\Infraestructure.pdb
+C:\Proyectos\Dotnet\Curso-Udemy-Uniminuto\tiendaDataBaseFirst\Infraestructure\obj\Debug\net7.0\ref\Infraestructure.dll

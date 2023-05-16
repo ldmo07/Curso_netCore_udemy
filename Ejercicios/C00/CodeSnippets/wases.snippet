@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Controlador Sesión</Title>
+			<Author>Jimmy Javier</Author>
+			<Description>Contenido del controlador sesión, incluyendo declaración de variables, constructor y método PostLogin</Description>
+			<Shortcut>wases</Shortcut>
+		</Header>
+		<Snippet>						
+			<Code Language="CSharp">
+				<![CDATA[ 
+        private IUsuariosRepositorio _usuariosRepositorio;
+        private IMapper _mapper;
+        private TokenService _tokenService;
+
+        public SesionController(IUsuariosRepositorio usuariosRepositorio,
+                                IMapper mapper,
+                                TokenService tokenService)
+        {
+            _usuariosRepositorio = usuariosRepositorio;
+            _mapper = mapper;
+            _tokenService = tokenService;
+        }
+
+        //POST: api/sesion/login
+        [HttpPost]
+        [Route("login")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<string>> PostLogin(LoginModelDto usuarioLogin)
+        {
+            var datosLoginUsuario = _mapper.Map<Usuario>(usuarioLogin);
+
+            var resultadoValidacion = await _usuariosRepositorio.ValidarDatosLogin(datosLoginUsuario);
+            if (!resultadoValidacion.resultado)
+            {
+                return BadRequest("Usuario/Contraseña Inválidos.");
+            }
+            return _tokenService.GenerarToken(resultadoValidacion.usuario);
+
+        }
+]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
+

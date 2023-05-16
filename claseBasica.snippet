@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Clase Basica</Title>
+            <Author>Luis David Mercado Ortega</Author>
+            <Description>Crea una clase basica con Id y Nombre</Description>
+            <Shortcut>cbs</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[
+                    public class $NombreClase${
+                        public int Id {get;set;}
+                        public string $NombrePropiedad$ {get;set;}
+                    }
+                ]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>NombreClase</ID>
+                    <Tooltip>Nombre de la clase</Tooltip>
+                    <Default>NombreClase</Default>
+                </Literal>
+                
+                <Literal>
+                    <ID>NombrePropiedad</ID>
+                    <Tooltip>Propiedad de tipo cadena</Tooltip>
+                    <Default>Nombre</Default>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>System.Threading</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

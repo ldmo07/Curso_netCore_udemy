@@ -1,0 +1,57 @@
+dotnet --version => verifica la versiona ctual
+
+dotnet new -h => explica o da ayuda para usar el comando dotnet new
+
+dotnet new -l => muestra las plantillas disponibles
+dotnet new list => muestra las plantillas disponibles
+
+dotnet new sln => crea una solucion 
+
+dotnet new webapi -o directorioSalida => crea un webApi en un directorio especifico  
+ejemplo => dotnet new webapi -o ApiPrueba 
+
+
+dotnet sln -h => da ayuda de lo que se puede hacer en una solucion como agregar un proyecto 
+
+dotnet sln add nombreProyecto => agrega un proyecto a la solución  
+ejemplo => dotnet sln add .\API\ 
+
+dotnet sln list => lista los proyectos de una solucion
+
+dotnet new classlib -o directorioSalida => crea una biblioteca de clases
+ejemplo => dotnet new classlib -o Core 
+
+
+dotnet add proyectoQueTendraReferencia reference Proyecto a referenciar => agrega una referencia entre proyectos
+ejemplo =>dotnet add app/app.csproj reference lib/lib.csproj
+
+dotnet add package nombrePaquete => instala un paquete de nuguets desde la consola debe estar dentro de la carpeta o proyecto donde se quiera instalar la librería 
+dotnet add package nombrePaquete --version numeroVersion=> instala un paquete de nuguets con una verison especifica desde la consola 
+
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 7.0.0 => instala proveedor de mysql para entityframework 
+
+dotnet tool list -g  => valida que tenga las herramientas de net Core instaladas estan son necesarias para las migraciones
+
+dotnet tool install --globlal dotnet-ef => instala las herranientas de net core entityframework
+
+dotnet tool update --global dotnet-ef --version numeroVersion => actualiza las herramienta de net core entityFramework
+
+dotnet ef migrations add nombreMigracion -p rutaProyectoMigracion -s ruta proyectoEjecucion => crea una migracion
+Ejemplo => dotnet ef migrations add initalBd -p .\Infraestructure\ -s .\API\
+
+dotnet ef migrations add nombreMigracion -p rutaProyectoMigracion -s ruta proyectoEjecucion - o carpetaDestinoMigracion => crea una migración en una carpeta en especifico
+Ejemplo => dotnet ef migrations add initalBd -p .\Infraestructure\ -s .\API\ -o Data\Migrations
+
+dotnet ef database update => ejecuta la migracion estando dentro del proyecto encargado de la ejecucion de la migracion
+
+dotnet ef database update -p .\rutaProyectoMigracion\ -s .\RutaProyectoEjecucion\ => ejecuta migracion  
+
+dotnet add package Microsoft.EntityFrameworkCore.Desing => instala el paguete de entityFramework design en la capa de API para que pueda ejecutar las migraciones desde el API
+
+Genera el scaffoldin para crear las clases y contexto partiendo de databaseFirst:
+dotnet ef dbcontext scaffold "CadenaConexionBD" proveedorBd  -s ProyectoInicio -p ProyectoSalida --context NombreContexto  --context-dir CarpetaSalidaData --output-dir CapetaSalidaEntiad
+ej:
+dotnet ef dbcontext scaffold "Server=localhost;User=root;Password=admin;Database=tiendaBD2" Pomelo.EntityFrameworkCore.MySql  -s API -p Infraestructure --context TiendaContext  --context-dir Data --output-dir Entities
+
+dotnet ef migrations script -p .\ProyectoContienMigracion\ -s .\ProyectoInicial => crea el script sql de la tabla migracion incial 
+Eje => dotnet ef migrations script -p .\Infraestructure\ -s .\API\ 

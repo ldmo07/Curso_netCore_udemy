@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Cors Política en Startup.cs</Title>
+			<Author>Jimmy Javier</Author>
+			<Description>Configuración de una política CORS en el método ConfigureServices dentro del archivo Startup.cs</Description>
+			<Shortcut>wacors</Shortcut>
+		</Header>
+		<Snippet>						
+			<Code Language="CSharp">
+				<![CDATA[ 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+            });
+]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Constructor Inyeccion de dependencias</Title>
+            <Author>Luis David Mercado Ortega</Author>
+            <Description>Crea un contrusctor con Inyeccion de dependencias</Description>
+            <Shortcut>ictr</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[
+                    private readonly TiendaContexto _contexto;
+
+
+                    public $className$ (TiendaContexto contexto){
+                        _contexto = contexto;
+                    }
+                $end$]]>
+            </Code>
+            <Declarations>
+                <Literal Editable="false">
+                    <ID>className</ID>
+                    <Tooltip>Nombre de la clase</Tooltip>
+                    <Function>ClassName()</Function>
+                    <Default>ClassNamePlaceHolder</Default>
+                </Literal>
+
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>Infraestructure.Data</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

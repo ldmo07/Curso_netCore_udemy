@@ -1,0 +1,3 @@
+Install-Package Serilog.AspNetCore
+Install-Package Serilog.Settings.Configuration
+Install-Package Serilog.Sinks.RollingFile

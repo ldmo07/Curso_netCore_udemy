@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Orden Dto</Title>
+			<Author>Jimmy Javier</Author>
+			<Description>Crea un Dto para la clase Orden</Description>
+			<Shortcut>wadtoord</Shortcut>
+		</Header>
+		<Snippet>						
+			<Code Language="CSharp">
+				<![CDATA[ 
+public class OrdenDto
+    {
+        public OrdenDto()
+        {
+            DetalleOrden = new List<DetalleOrdenDto>();
+        }
+
+        public int Id { get; set; }
+        public decimal CantidadArticulos { get; set; }
+        public decimal Importe { get; set; }
+        [Required]
+        public DateTime FechaRegistro { get; set; }        
+        public int UsuarioId { get; set; }
+        public string Usuario { get; set; }
+        public EstatusOrden EstatusOrden { get; set; }        
+        public List<DetalleOrdenDto> DetalleOrden { get; set; }
+    }
+]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
+

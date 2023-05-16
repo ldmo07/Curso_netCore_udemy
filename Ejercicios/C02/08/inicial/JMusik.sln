@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JMusik.Models", "JMusik.Models\JMusik.Models.csproj", "{92918629-A019-4D14-8AC4-2E6A87A66639}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JMusik.Data", "JMusik.Data\JMusik.Data.csproj", "{78A2FF59-4BA3-4997-AE2D-868646AD6422}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JMusik.WebApi", "JMusik.WebApi\JMusik.WebApi.csproj", "{B4644762-0C31-4D3B-9FC0-38C752C68A56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92918629-A019-4D14-8AC4-2E6A87A66639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92918629-A019-4D14-8AC4-2E6A87A66639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92918629-A019-4D14-8AC4-2E6A87A66639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92918629-A019-4D14-8AC4-2E6A87A66639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A2FF59-4BA3-4997-AE2D-868646AD6422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A2FF59-4BA3-4997-AE2D-868646AD6422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A2FF59-4BA3-4997-AE2D-868646AD6422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A2FF59-4BA3-4997-AE2D-868646AD6422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4644762-0C31-4D3B-9FC0-38C752C68A56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4644762-0C31-4D3B-9FC0-38C752C68A56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4644762-0C31-4D3B-9FC0-38C752C68A56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4644762-0C31-4D3B-9FC0-38C752C68A56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A453FAC-EC69-4CA8-A294-01E99749C5CB}
+	EndGlobalSection
+EndGlobal

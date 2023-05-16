@@ -1,0 +1,20 @@
+Instalar en el proyecto JMusik.Data
+	Install-Package Microsoft.EntityFrameworkCore.SqlServer
+	dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
+Usando Fluent Api
+scaffold-dbcontext "Data Source=(localdb)\mssqllocaldb;Initial Catalog=TiendaDb;Integrated Security=True;" Microsoft.EntityFrameworkCore.SqlServer
+
+dotnet ef dbcontext scaffold "Server=(localdb)\mssqllocaldb;Database=TiendaDb;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer
+
+Usando Data Annotations
+scaffold-dbcontext "Data Source=(localdb)\mssqllocaldb;Initial Catalog=TiendaDb;Integrated Security=True;" Microsoft.EntityFrameworkCore.SqlServer --data-annotations
+
+dotnet ef dbcontext scaffold "Server=(localdb)\mssqllocaldb;Database=TiendaDb;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer --data-annotations
+
+
+Información sobre el comando dbcontext scaffold
+https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/dotnet
+
+
+https://www.connectionstrings.com/
